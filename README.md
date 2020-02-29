@@ -44,3 +44,87 @@ npm run test
 - store mysql config data in .env
 - dependency injection
 - integration tests
+
+## Usage
+**Examples**:  
+Get all books:  
+**GET** localhost:port/books/  
+
+Get book by ID:  
+**GET** localhost:port/books/_id_  
+
+Create book:  
+**POST** localhost:port/books/  
+body:  
+```json
+{
+    "title": "First Book",
+    "description": "Our first inserted book",
+    "authors": [
+        {
+            "firstName": "Johnny",
+            "lastName": "Cash"
+        },
+        {
+            "firstName": "June",
+            "lastName": "Carter"
+        }
+    ]
+}
+```
+
+Update book:  
+**PUT** localhost:port/books/  
+body:  
+```json
+{
+    "id": 1,
+    "title": "First Book",
+    "description": "Our first updated book",
+    "authors": [
+        {
+            "id": 1,
+            "firstName": "Johnny",
+            "lastName": "Cash"
+        },
+        {
+            "id": 2,
+            "firstName": "June",
+            "lastName": "Carter Cash"
+        }
+    ]
+}
+```
+
+Delete book by ID:  
+**DELETE** localhost:port/books/_id_  
+
+Get all authors:  
+**GET** localhost:port/authors/  
+
+Get author by ID:  
+**GET** localhost:port/authors/_id_  
+
+Create author:  
+**POST** localhost:port/authors/  
+body:  
+```json
+{
+    "firstName": "William",
+    "lastName": "Shakespeare"
+}
+```
+
+Update author:  
+**PUT** localhost:port/authors/  
+body:  
+```json
+{
+    "id": 3,
+    "firstName": "William",
+    "lastName": "Shakespeare"
+}
+```
+
+Delete author by ID:  
+**DELETE** localhost:port/authors/_id_  
