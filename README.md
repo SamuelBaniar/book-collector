@@ -19,10 +19,6 @@
 
 ## Installation
 
-**First** create **.env** file that contains **API_PORT=_yourNumber_** where _yourNumber_ represents on which port will the app listen.
-(it's present here, but not commited normally)
-
-Then run:
 ```bash
 npm install
 ```
