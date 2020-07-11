@@ -1,5 +1,5 @@
 <p align="center">
-  Simple REST api app for Slido
+  Simple REST api app for collection of books
 </p>
 
 ## Tech stack
